@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tabela {
+    border-collapse: collapse;
+}
+
+.tabela tr,
+td,
+th {
+    border: 2px solid #a3cf95;
+}
