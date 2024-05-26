@@ -10,32 +10,42 @@ h2 {
     font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: bold;
-    color: #f5cc44;
+    color: #ffd23d;
 }
 
 .box {
-    background: #d1d1d1;
+    background: #e2e2e2;
     border-radius: 12px;
     width: 120%;
     border: 1px solid#747272;
-    box-shadow: 9px 9px #d3c69b;
+    box-shadow: 9px 9px #f1dfa3 ;
 }
 
 ul,
 li {
     list-style: none;
-    background: #e2dfdf;
+    background: hsl(46, 100%, 94%);
     border-radius: 12px;
-    border: 1px solid #d1cccc;
+    border: 1px solid#b4b4b4;
 }
 
 .btn-add {
+    margin: 10px;
     border: 1px solid#a8a0a0;
     background: linear-gradient(#dad6d6, #c1c1c1, #a7a3a3);
 }
 
 .btn-remove {
-    margin-left: 45px;
+    margin-left: 95px;
     border: 1px solid#b93e3e;
     background: linear-gradient(#f77373, #df5e5e, #c04949);
+}
+
+.btn-remove:hover{
+    background: #b93e3e;
+    color: #eee8e8;
+}
+
+.btn-add:hover{
+    background: #fcd864;
 }
