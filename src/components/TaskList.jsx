@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import './TaskList.css';
 
 function TaskList() {
-    const [Task, setTask] = useState([]);
+    const [Tasks, setTasks] = useState([]);
     const [newTask, setnewTask] = useState('');
 
     const addTask = () => {
         if (newTask.trim() !== "") {
-            setTask([...Task, newTask]);
+            setTasks([...Tasks, newTask]);
             setnewTask('');
         }
     };
@@ -21,12 +22,12 @@ function TaskList() {
         < div >
             <h2>Task List</h2>
             <input type="text" value={newTask} onChange={(e) => setnewTask(e.target.value)} placeholder="Add a new task" />
-            <button onClick={newTask}>Add</button>
+            <button className="btn-add" onClick={addTask}>Add</button>
             <ul>
                 {Tasks.map((Task, index) => (
                     <li key={index}>
                         {Task}{''}
-                        <button onClick={() => removeTask(index)}>Remove</button>
+                        <button className="btn-remove" onClick={() => removeTask(index)}>Remove</button>
                     </li>
                 ))}
             </ul>
