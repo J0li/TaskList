@@ -1,4 +1,41 @@
-App {
-    background-color: antiquewhite;
-    box-sizing: 30px;
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-decoration: 0;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    color: #f5cc44;
+}
+
+.box {
+    background: #d1d1d1;
+    border-radius: 12px;
+    width: 120%;
+    border: 1px solid#747272;
+    box-shadow: 9px 9px #d3c69b;
+}
+
+ul,
+li {
+    list-style: none;
+    background: #e2dfdf;
+    border-radius: 12px;
+    border: 1px solid#d1cccc;
+}
+
+.btn-add {
+    border: 1px solid#a8a0a0;
+    background: linear-gradient(#dad6d6, #c1c1c1, #a7a3a3);
+}
+
+.btn-remove {
+    margin-left: 45px;
+    border: 1px solid#b93e3e;
+    background: linear-gradient(#f77373, #df5e5e, #c04949);
 }
